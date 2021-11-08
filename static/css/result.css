@@ -1,0 +1,15 @@
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background: #ffffff13;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+  min-height: 90vh;
+}
