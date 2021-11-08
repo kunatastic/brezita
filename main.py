@@ -8,7 +8,7 @@ import os
 from werkzeug.utils import redirect
 
 app = Flask(__name__)
-Upload = 'static\\storage'
+Upload = '.\\static\\storage'
 app.config['uploadFolder'] = Upload
 ALLOWED_EXTENSIONS = set(['png'])
 
