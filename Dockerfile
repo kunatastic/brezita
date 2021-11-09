@@ -12,4 +12,4 @@ RUN ["pipenv", "install"]
 
 ENV FLASK_APP=main.py
 
-CMD ["pipenv","run","flask","run","--host:0.0.0.0"]
+CMD ["pipenv","run","flask","run","--host=0.0.0.0"]
