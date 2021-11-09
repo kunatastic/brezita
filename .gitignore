@@ -1,3 +1,9 @@
 __pycache__
 .vscode
 venv
+static/storage/*.png
+static/storage/*.jpg
+static/storage/*.jpeg
+static/storage/filtered/*.png
+static/storage/filtered/*.jpg
+static/storage/filtered/*.jpeg

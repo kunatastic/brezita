@@ -11,9 +11,26 @@
   <body>
     <div class="container">
       <div class="main">
-        <h1>Hurray 🎉🎉!! Results are here</h1>
-        <h1>Value - {{result}}</h1>
-        <img src="/{{captcha_img}}" alt="loading..." />
+        <h1 class="header">Hurray 🎉🎉!! Results are here</h1>
+
+        <div class="img-container">
+          <div class="grid">
+            <div class="grid-item">
+              <h2 class="img-head">Original Image</h2>
+              <img src="/{{captcha_img}}" alt="loading..." />
+            </div>
+            <div class="grid-item">
+              <h2 class="img-head">Filtered Image</h2>
+              <img src="/{{filtered_img}}" alt="loading..." />
+            </div>
+          </div>
+        </div>
+
+        <h1 class="result">value: <span class="output">{{result}}</span></h1>
+
+        <a href="/">
+          <button class="custom-btn btn-15">Go Back</button>
+        </a>
       </div>
     </div>
     <script src="/static/js/main.js"></script>

@@ -8,24 +8,33 @@
 
     <!-- link jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="stylesheet" href="/static/css/loader.css" />
   </head>
-  <body>
-    <div class="container">
+  <body onload="splashLoader()">
+    <div class="container dark" id="loading">
       <div class="flex">
-        <form method="POST" action="/predict/" enctype="multipart/form-data">
+        <span class="loader"><span class="loader-inner color-1 inner-1"></span></span>
+        <span class="loader"><span class="loader-inner color-2 inner-2"></span></span>
+        <span class="loader"><span class="loader-inner color-3 inner-1"></span></span>
+        <span class="loader"><span class="loader-inner color-4 inner-2"></span></span>
+      </div>
+    </div>
+    <div class="hidden" id="content">
+      <div class="flex">
+        <form action="/predict/" method="POST" enctype="multipart/form-data">
           <div class="card">
             <h1>Upload Captcha</h1>
             <div class="flex secondary">
-              <div class="custom-file-upload">
-                <input type="file" id="file" name="image" required />
-              </div>
-              <button type="submit" class="custom-btn btn-15">Predict</button>
+              <div class="custom-file-upload"><input type="file" id="file" name="image" /></div>
+              <button type="submit" onclick="startLoader();" class="custom-btn btn-15">
+                Predict
+              </button>
             </div>
           </div>
         </form>
       </div>
     </div>
-    <script src="static/js/main.js"></script>
+    <script src="/static/js/main.js"></script>
   </body>
 </html>

@@ -131,3 +131,27 @@
 })(jQuery);
 
 $("input[type=file]").customFile();
+
+function startLoader() {
+  console.log("started loader...");
+  var loading = document.getElementById("loading");
+  loading.classList.remove("hidden");
+  var content = document.getElementById("content");
+  content.classList.add("hidden");
+}
+
+function splashLoader() {
+  var min = 2;
+  var max = 5;
+  var wait = Math.random() * (max - min) + min;
+  setTimeout(function () {
+    var loading = document.getElementById("loading");
+    loading.classList.add("hidden");
+    loading.classList.remove("dark");
+    var content = document.getElementById("content");
+    content.classList.add("container");
+    content.classList.remove("hidden");
+  }, wait * 1000);
+
+  // console.log(wait + "s");
+}
