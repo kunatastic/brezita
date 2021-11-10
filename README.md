@@ -1,4 +1,5 @@
-<img src="./images/brezita.svg">
+<div align="center">
+<img src="./images/brezita.svg" width="500">
 
 ![dependencies](https://img.shields.io/github/pipenv/locked/dependency-version/kunatastic/brezita/flask)
 ![repo](https://img.shields.io/github/repo-size/kunatastic/brezita)
@@ -7,6 +8,8 @@
 ![last](https://img.shields.io/github/last-commit/kunatastic/brezita)
 
 # Brezita
+
+</div>
 
 Brezita is a captcha solver and it can effectively predict the characters in the captcha image provided. Brezita is build open upon Tensorflow's CNN model deployed on Flask server.
 
@@ -20,7 +23,9 @@ We have used the dataset from kaggle [here](https://www.kaggle.com/fournierp/cap
 
 We have used adaptive threshold to extract text from the images, dilated the image and added gaussian blur to image.
 
-<img src="./images/img-1.jpg" style="float:center">
+<div align="center">
+  <img src="./images/img-1.jpg" style="float:center" width="500">
+</div>
 
     img = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 175, 0)
     img = cv2.morphologyEx(img, cv2.MORPH_CLOSE, np.ones((4,2), np.uint8))
@@ -31,7 +36,9 @@ We have used adaptive threshold to extract text from the images, dilated the ima
 
 We have used the keras models to train the model and were able to achieve 0.89 f1 score.
 
-<img src="./images/result.jpg" style="float:center">
+<div align="center">
+  <img src="./images/result.jpg" style="float:center" width="600">
+</div>
 
 # Flask Application
 
