@@ -40,6 +40,8 @@ We have used the keras models to train the model and were able to achieve 0.89 f
   <img src="./images/result.jpg" style="float:center" width="600">
 </div>
 
+Checkout the colab here - https://colab.research.google.com/drive/17NlgFk1JjpBVhiVdvcSNofOJ4kVhhMj8?usp=sharing
+
 # Flask Application
 
 ## Steps to setup Flask application.
